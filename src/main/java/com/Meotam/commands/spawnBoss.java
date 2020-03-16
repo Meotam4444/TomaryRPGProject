@@ -61,6 +61,7 @@ public class spawnBoss implements CommandExecutor {
                                                     Zombie z2 = loc.getWorld().spawn(new Location(p.getWorld(), locX, locY, loc2Z), Zombie.class);
                                                     z2.setCustomName("§7Sklave");
                                                     z2.setCustomNameVisible(true);
+                                                    pigboss.getWorld().playSound(pigboss.getLocation(),Sound.ENTITY_WITCH_AMBIENT, 1, 0);
 
                                                 } else {
                                                     //spawnt die Loot-"Truhe"
